@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  background: #f3f5fc;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+.content__logo img {
+  margin: 40px 0 0 40px;
+  height: 100vh;
+  width: 120px;
+  height: 48px;
+}
+
+.content__input {
+  background: wheat;
+  margin: 40px 0 0 10px;
+}
+
+.content__input form {
+  display: flex;
+  flex-direction: column;
+}
+
+.content__input .input__message {
+  width: 577px;
+  height: 48px;
+  border: none;
+  background: #f3f5fc;
+  color: #0a3871;
+  font-size: 20px;
+}
+
+.input__buttons {
+  display: flex;
+  gap: 24px;
+}
+
+.input__encrypt {
+  background: #0a3871;
+  height: 67px;
+  width: 328px;
+  border: #000 solid 1px;
+  border-radius: 28px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.input__decrypt {
+  background: #d8dfe8;
+  height: 67px;
+  width: 328px;
+  border: #0a3871 solid 1px;
+  border-radius: 28px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: #0a3871;
+  font-size: 16px;
+  cursor: pointer;
+}
