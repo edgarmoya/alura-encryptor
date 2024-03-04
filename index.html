@@ -25,13 +25,28 @@
             type="text"
           ></textarea>
 
+          <div class="input__info">
+            <img src="/img/Info.svg" alt="Info" />
+            <label> Apenas letras minúsculas y sin acento.</label>
+          </div>
           <div class="input__buttons">
             <input class="input__encrypt" type="submit" value="Encriptar" />
             <input class="input__decrypt" type="submit" value="Desencriptar" />
           </div>
         </form>
       </section>
-      <section class="content__output"></section>
+      <section class="content__output">
+        <div class="output__empty">
+          <img src="/img/Muñeco.svg" alt="Person" />
+          <h3>Ningún mensaje fue encontrado</h3>
+          <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+        </div>
+
+        <div class="output__noempty">
+          <label></label>
+          <input class="output__copy" type="button" value="Copiar" />
+        </div>
+      </section>
     </main>
   </body>
 </html>

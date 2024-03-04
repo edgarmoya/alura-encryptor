@@ -15,36 +15,62 @@ body {
   display: flex;
   flex-direction: row;
   height: 100vh;
+  gap: 20px;
+  padding: 0 40px;
 }
 
 .content__logo img {
-  margin: 40px 0 0 40px;
-  height: 100vh;
   width: 120px;
   height: 48px;
+  margin: 40px 0;
 }
 
 .content__input {
-  background: wheat;
-  margin: 40px 0 0 10px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 20px 0;
 }
 
 .content__input form {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 20px 0 20px 0;
 }
 
 .content__input .input__message {
-  width: 577px;
-  height: 48px;
+  width: 100%;
+  height: 100%;
   border: none;
   background: #f3f5fc;
   color: #0a3871;
-  font-size: 20px;
+  font-size: 18px;
+  font-weight: 400;
+  resize: none;
+  outline: none;
+}
+
+.input__info {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.input__info img {
+  height: 16px;
+  width: 16px;
+}
+
+.input__info label {
+  color: #868e96;
+  font-size: 12px;
 }
 
 .input__buttons {
   display: flex;
+  justify-content: center;
   gap: 24px;
 }
 
@@ -53,11 +79,15 @@ body {
   height: 67px;
   width: 328px;
   border: #000 solid 1px;
-  border-radius: 28px;
+  border-radius: 18px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   color: white;
   font-size: 16px;
   cursor: pointer;
+}
+
+.input__encrypt:hover {
+  background: #072c58;
 }
 
 .input__decrypt {
@@ -65,9 +95,67 @@ body {
   height: 67px;
   width: 328px;
   border: #0a3871 solid 1px;
-  border-radius: 28px;
+  border-radius: 18px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   color: #0a3871;
   font-size: 16px;
   cursor: pointer;
+}
+
+.input__decrypt:hover {
+  background: #c6ccd4;
+}
+
+.content__output {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  justify-content: center; /*space-between cuando es no empty*/
+  background: white;
+  width: 600px;
+  border-radius: 28px;
+  margin: 20px 0;
+  padding: 20px 20px;
+  box-shadow: rgba(0, 0, 0, 0.08) 0 24px 32px;
+}
+
+.output__noempty {
+  display: none;
+}
+
+.output__noempty label {
+  overflow-y: auto;
+  height: 90%;
+  color: #495057;
+  font-size: 18px;
+}
+
+.output__empty {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.output__empty p {
+  font-size: 14px;
+  color: #495057;
+}
+
+.output__copy {
+  background: white;
+  height: 67px;
+  width: 100%;
+  border: #0a3871 solid 1px;
+  border-radius: 18px;
+  color: #0a3871;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.output__copy:hover {
+  background: #d8dfe8;
 }
