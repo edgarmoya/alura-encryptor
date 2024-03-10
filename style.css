@@ -40,7 +40,7 @@ body {
   padding: 20px 0 20px 0;
 }
 
-.content__input .input__message {
+.content__input #input__message {
   width: 100%;
   height: 100%;
   border: none;
@@ -111,7 +111,7 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 15px;
-  justify-content: center; /*space-between cuando es no empty*/
+  justify-content: center;
   background: white;
   width: 600px;
   border-radius: 28px;
@@ -122,6 +122,11 @@ body {
 
 .output__noempty {
   display: none;
+  width: 100%;
+  height: 100%;
+  gap: 10px;
+  flex-direction: column;
+  overflow-y: auto;
 }
 
 .output__noempty label {
@@ -136,8 +141,6 @@ body {
   flex-direction: column;
   gap: 10px;
   text-align: center;
-  justify-content: center;
-  align-items: center;
 }
 
 .output__empty p {
@@ -145,7 +148,7 @@ body {
   color: #495057;
 }
 
-.output__copy {
+.output__clipboard {
   background: white;
   height: 67px;
   width: 100%;
@@ -156,6 +159,6 @@ body {
   cursor: pointer;
 }
 
-.output__copy:hover {
+.output__clipboard:hover {
   background: #d8dfe8;
 }

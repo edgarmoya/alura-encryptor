@@ -6,11 +6,12 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" type="image" href="img/Logo.svg" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
       rel="stylesheet"
     />
-    <title>Encriptador</title>
+    <title>Encriptador | Challege</title>
   </head>
   <body>
     <main class="content">
@@ -18,16 +19,17 @@
         <img src="/img/Logo.svg" alt="logo-alura" />
       </section>
       <section class="content__input">
-        <form>
+        <form id="form">
           <textarea
             placeholder="Ingrese el texto aquí"
-            class="input__message"
+            id="input__message"
             type="text"
+            required
           ></textarea>
 
           <div class="input__info">
             <img src="/img/Info.svg" alt="Info" />
-            <label> Apenas letras minúsculas y sin acento.</label>
+            <label>Solo letras minúsculas y sin acento.</label>
           </div>
           <div class="input__buttons">
             <input class="input__encrypt" type="submit" value="Encriptar" />
@@ -43,10 +45,17 @@
         </div>
 
         <div class="output__noempty">
-          <label></label>
-          <input class="output__copy" type="button" value="Copiar" />
+          <label id="output__message"></label>
+          <input
+            class="output__clipboard"
+            type="button"
+            value="Copiar"
+            onclick="writeClipboard()"
+          />
         </div>
       </section>
     </main>
+
+    <script src="app.js"></script>
   </body>
 </html>
