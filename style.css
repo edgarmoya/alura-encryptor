@@ -20,7 +20,7 @@ body {
 }
 
 .content__logo img {
-  width: 120px;
+  width: 100px;
   height: 48px;
   margin: 40px 0;
 }
@@ -34,6 +34,7 @@ body {
 
 .content__input form {
   display: flex;
+  width: 100%;
   flex-direction: column;
   justify-content: space-between;
   gap: 10px;
@@ -77,7 +78,7 @@ body {
 .input__encrypt {
   background: #0a3871;
   height: 67px;
-  width: 328px;
+  width: 100%;
   border: #000 solid 1px;
   border-radius: 18px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -93,7 +94,7 @@ body {
 .input__decrypt {
   background: #d8dfe8;
   height: 67px;
-  width: 328px;
+  width: 100%;
   border: #0a3871 solid 1px;
   border-radius: 18px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -113,7 +114,7 @@ body {
   gap: 15px;
   justify-content: center;
   background: white;
-  width: 600px;
+  width: 650px;
   border-radius: 28px;
   margin: 20px 0;
   padding: 20px 20px;
@@ -161,4 +162,60 @@ body {
 
 .output__clipboard:hover {
   background: #d8dfe8;
+}
+
+/* Vista tablet y móvil */
+@media (max-width: 900px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+  }
+
+  .content__logo img {
+    width: 100px;
+    height: 35px;
+    margin: 30px 0 0 0;
+  }
+
+  #output__img {
+    display: none;
+  }
+
+  .content__input {
+    margin: 0px 0;
+  }
+
+  .content__input #input__message {
+    height: 200px;
+  }
+
+  .input__encrypt,
+  .input__decrypt {
+    height: 60px;
+  }
+
+  .content__output {
+    width: 100%;
+    max-height: 400px;
+    padding: 30px 20px;
+    margin: 0 0 20px 0;
+  }
+}
+
+/* Vista móvil */
+@media (max-width: 455px) {
+  .content {
+    padding: 0 20px;
+  }
+
+  .input__encrypt,
+  .input__decrypt {
+    height: 50px;
+  }
+
+  .input__buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
