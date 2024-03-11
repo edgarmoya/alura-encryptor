@@ -191,7 +191,8 @@ body {
   }
 
   .input__encrypt,
-  .input__decrypt {
+  .input__decrypt,
+  .output__clipboard {
     height: 60px;
   }
 
@@ -210,7 +211,8 @@ body {
   }
 
   .input__encrypt,
-  .input__decrypt {
+  .input__decrypt,
+  .output__clipboard {
     height: 50px;
   }
 
